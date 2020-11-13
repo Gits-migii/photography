@@ -1,0 +1,50 @@
+$breakpoints: (
+  'md': 'screen and (max-width: 768px)',
+) !default;
+
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+
+.c-form__input {
+  margin-bottom: 2.4rem;
+  label {
+    font-size: 1.2rem;
+  }
+
+  input,
+  textarea {
+    appearance: none;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    min-width: 350px;
+    line-height: 1.7;
+
+    @include mq {
+      min-width: auto;
+      width: 100%;
+    }
+  }
+}
+
+.c-form__btn {
+  appearance: none;
+  background:#0a0a60 ;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  letter-spacing: .2rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+}

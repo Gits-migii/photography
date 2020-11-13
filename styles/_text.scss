@@ -1,0 +1,23 @@
+.c-text_01 {
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+
+  a {
+    text-decoration: underline;
+    transition: .2s ease-out opacity;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+.c-text_headcaption {
+  margin-top: -3.6rem;
+  font-weight: normal;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 3.6rem;
+
+}
