@@ -34,6 +34,8 @@ const portrait = () => {
       <Layout>
         <h1>ポートレート</h1>
         {/* // 多分ここらへんで関数実行するのか？ → getPhoto */}
+        {/* 実行されない */}
+        <button onClick={unko.getPhoto}>click</button>
       </Layout>
     </div>
   )
