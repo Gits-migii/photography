@@ -16,7 +16,7 @@ function getPhoto() {
       return response.json();
     })
     .then(json => {
-      console.log(json)
+      console.log(json.image)
       // document.getElementById("title").innerHTML = json.title;
       // document.getElementById("image").innerHTML = json.image;
     })
@@ -31,10 +31,13 @@ const portrait = () => {
   return (
     <div>
       <Layout>
+
         <h1>ポートレート</h1>
         {/* // 多分ここらへんで関数実行するのか？ → getPhoto */}
         {/* 実行されない */}
         <button onClick={getPhoto}>click</button>
+
+        <img src={image} />
       </Layout>
     </div>
   )

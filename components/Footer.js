@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import style from './Header.module.scss';
-import Link from 'next/link';
+import React from 'react';
+import style from '../components/Footer.module.scss';
 
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={style.footercnt}>
+      <address>© 2013 ATUSHI ITO</address>
     </footer>
   )
 }

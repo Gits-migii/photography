@@ -1,0 +1,7 @@
+$gray : #D0D0D0;
+$text : #151515;
+
+// breakPoint
+$breakpoints: ('sp': 'screen and (max-width: 767px)',
+  'tab': 'screen and (max-width: 1279px)',
+) !default;
